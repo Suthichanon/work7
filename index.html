@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vite App</title>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script type="module" src="/src/main.ts"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</body>
+
+<script>
+  $('.navTrigger').click(function () {
+    $(this).toggleClass('active');
+    console.log("Clicked menu");
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
+  }),
+    $(window).scroll(function () {
+      if ($(document).scrollTop() > 50) {
+        $('.nav').addClass('affix');
+        console.log("OK");
+      } else {
+        $('.nav').removeClass('affix');
+      }
+    });
+</script>
+
+<style>
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(219, 219, 219);
+  }
+
+  html {
+    margin: 0;
+  }
+</style>
+
+
+</html>
