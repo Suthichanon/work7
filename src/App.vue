@@ -13,7 +13,7 @@
         </ul>
       </div>
       <span class="navTrigger">
-        <i></i>
+        <i>awdawdawd</i>
         <i></i>
         <i></i>
       </span>
@@ -28,7 +28,10 @@
 </template>
 <script lang="ts">
 import { RouterLink, RouterView } from "vue-router";
-export default {};
+export default {
+
+}
+
 </script>
 <style scoped>
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700");
