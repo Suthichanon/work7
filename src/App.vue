@@ -6,30 +6,27 @@
       </div>
       <div id="mainListDiv" class="main_list">
         <ul class="navlinks">
-          <li><a href="">About</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><Router-Link to="/news">ข่าวสาร</Router-Link></li>
+          <li><Router-Link to="/ListName">รายชื่อวิชา</Router-Link></li>
+          <li><Router-Link to="/AddOrDrop">เพิ่มถอนรายวิชา</Router-Link></li>
         </ul>
       </div>
       <span class="navTrigger">
-        <i>awdawdawd</i>
+        <i></i>
         <i></i>
         <i></i>
       </span>
     </div>
   </nav>
+  
   <section class="home"></section>
-  <div style="height: 100vh">
-    <section class="input-from" style="margin-top: 0px">
-      <input type="text" />
-    </section>
+  <div style="height: 93vh">
+    <RouterView/>
   </div>
 </template>
 <script lang="ts">
 import { RouterLink, RouterView } from "vue-router";
 export default {
-
 }
 
 </script>

@@ -10,24 +10,19 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/news-noti',
-      name: 'news-noti',
+      path: '/news',
+      name: 'news',
       component: () => import('../views/new-noti.vue')
     },
     {
-      path: '/view',
-      name: 'view',
-      component: () => import('../views/view.vue')
-    },
-    {
-      path: '/view',
-      name: 'view',
-      component: () => import('../views/view.vue')
-    },
-    {
-      path: '/add_drop',
+      path: '/AddOrDrop',
       name: 'add_drop',
       component: () => import('../views/add_drop.vue')
+    },
+    {
+      path: '/ListName',
+      name: 'list_name',
+      component: () => import('../views/viewlist.vue')
     },
   ]
 })
