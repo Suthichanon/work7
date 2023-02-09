@@ -17,21 +17,26 @@
         <i></i>
       </span>
     </div>
+
   </nav>
-  
+
   <section class="home"></section>
-  <div style="height: 93vh">
-    <RouterView/>
+  <div style="height: 93vh min-width: 100vh;">
+    <RouterView />
+
   </div>
 </template>
 <script lang="ts">
 import { RouterLink, RouterView } from "vue-router";
+
 export default {
+
 }
 
 </script>
 <style scoped>
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700");
+
 html,
 body {
   margin: 0;
@@ -41,12 +46,20 @@ body {
   font-size: 62.5%;
   font-size: 10px;
 }
+
 .nav {
   width: 100%;
   height: 65px;
   position: fixed;
   line-height: 65px;
   text-align: center;
+  z-index: 100;
+
+}
+
+RouterView {
+  border: 10px solid red;
+
 }
 
 .nav div.logo {
@@ -93,6 +106,7 @@ body {
   line-height: 65px;
   font-size: 1.5rem;
 }
+
 /* //////////////////////////////////////////////////////////////////////Copy */
 .nav div.main_list ul li a {
   text-decoration: none;
