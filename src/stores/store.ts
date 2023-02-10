@@ -4,8 +4,8 @@ export type Course = {
   SubName: string
   Scode: string
   sdescription: string,
-  stime1: string,
-  stime2: string,
+  stime1: number,
+  stime2: number,
   tname: string,
 }
 
