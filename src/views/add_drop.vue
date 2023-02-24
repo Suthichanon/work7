@@ -2,14 +2,14 @@
   <div class="container">
     <div class="boxcon">
       <div class="box">
-        <form>
+        <form @submit.prevent="confirmAndSubmit">
           <!-- 2 column grid layout with text inputs for the first and last names -->
           <div class="row mb-4">
             <div class="col">
               <div class="form-outline">
                 <label class="form-label" for="form6Example1">ชื่อวิชา</label>
                 <input style="text-align: center;" type="text" id="form6Example1" name="SubName"
-                  placeholder="ใส่ชื่อวิชา" v-model="formData.SubName" :required="true" class="form-control" />
+                  placeholder="ใส่ชื่อวิชา" v-model="formData.SubName" required class="form-control" />
               </div>
             </div>
           </div>
@@ -40,12 +40,11 @@
             <label class="form-label" for="form6Example5">ผู้สอน</label>
             <input style="text-align: center;" type="text" id="form6Example5" name="tname"
               placeholder="ใส่ชื่ออาจารย์ผู้สอน" v-model="formData.tname" required class="form-control" />
-
           </div>
 
 
           <!-- Submit button -->
-          <button type="submit" class="btn btn-primary btn-block mb-4" @click.prevent="confirmAndSubmit">Submit</button>
+          <button type="submit" class="btn btn-primary btn-block mb-4">Submit</button>
 
         </form>
       </div>
